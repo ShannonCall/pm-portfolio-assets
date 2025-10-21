@@ -177,3 +177,110 @@ How mobile will be simplified?
 Any size/texture limits I should know before I prep images?
 
 Placeholders needed or wait for my content first?
+
+---
+## Decor & Placement Updates (Oct 2025)
+
+Decor & Placement Updates (Oct 2025)
+
+Theme: Inherited, heirloom study passed down through generations. Brass = intellect/exploration. Silver = heritage/lineage. Blue gemstone accents = insight/clarity.
+
+Object Placement (single use per object)
+
+Tea Set (pick one: pink or blue): Side table beside the chair in the certificates zone. Two cups, one “in use.”
+
+Framed Motto (placeholder for now): Above the floor globe. Use parchment placeholder; I’ll supply the final texture later.
+
+Motto text (final to come): “Improvise, Adapt, and Overcome.”
+
+Ancestor Portrait (public domain): Small frame on bookshelf or a side niche; add tiny brass nameplate (e.g., “Founder, 1823”).
+
+Silver Letter Tray: Back-right of desk. Polished silver, light tarnish in filigree.
+
+Dome Desk Magnifier: Mid-right of desk, angled toward map blotter.
+
+Blue Agate Geode: Back-left of desk or upper shelf corner—visible, not in work area.
+
+Compass/Spyglass/Magnifier Set (if used): Front-right of desk or shelf vignette (avoid crowding blotter).
+
+Left-Handed Desk (straight-wrist)
+
+Main writing area: center-left of blotter.
+
+Pen holder/glass globe: front-left.
+
+Lamp on left to avoid hand shadow.
+
+Keep center front clean for nameplate.
+
+Assets, Formats & Pipeline
+
+Source images: .jpg/.png preferred; .webp/.avif OK for references.
+
+Runtime: Three.js with .blend source → export .glb.
+
+Compression: OK for dev to convert to .ktx2 for GPU compression.
+
+Textures: BaseColor, Roughness, Metallic, Normal, (optional) AO.
+
+Scale: Real-world (desk ~1.5 m).
+
+Instancing: Books, scrolls, frames.
+
+Material targets
+
+Mahogany wood: satin polish, micro-wear.
+
+Aged brass: metallic 1, roughness ~0.3.
+
+Polished silver: metallic 1, roughness ~0.45, cool AO in crevices.
+
+Leather map blotter: dark frame + parchment center, visible stitching.
+
+Porcelain (tea): subtle clear coat.
+
+Gemstone (agate): thin clear coat; gentle sparkle/emissive specks.
+
+Placeholders (Swap Later)
+
+/textures/motto_placeholder.jpg → /textures/motto_final.jpg
+
+Ancestor portrait: temp public-domain image → can be swapped with final at same path.
+
+QR code: currently LinkedIn; will replace with portfolio QR later.
+
+Frames & CTA button: may be reused across props for consistency.
+
+Accessibility & Motion
+
+Keyboard: Tab focus for hotspots; Enter/Esc modals.
+
+“Reduce motion” toggle (softer camera tween, no bob).
+
+Alt text for all interactives (certs, books, scrolls, desk items).
+
+Content Hand-Off Checklist (decor phase)
+
+ Tea set (pick one)
+
+ Motto frame (placeholder)
+
+ Ancestor portrait (public domain)
+
+ Letter tray (silver)
+
+ Dome magnifier
+
+ Geode placement
+
+ Desk layout (left-handed, straight-wrist)
+
+ Frames/CTA reusable note
+
+ QR = LinkedIn (temp)
+
+Suggested follow-up commit messages
+
+Add new office decor assets and placement notes
+
+Update README: decor placement, placeholders, left-handed desk
